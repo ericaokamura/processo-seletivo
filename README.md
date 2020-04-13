@@ -19,7 +19,9 @@ Ferramentas e frameworks utilizados:
 
 
 Arquivo "schema.sql" : Schema do banco de dados
+
 Pasta "app-logs" : projeto back-end Java Web Spring
+
 Pasta "app-logs-angular": projeto front-end Angular 9
 
 

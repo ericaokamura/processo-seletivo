@@ -17,11 +17,12 @@ Ferramentas e frameworks utilizados:
 11. Selenium
 12. Maven
 
+
 Sobre os arquivos e pastas:
 
-  a. Arquivo "schema.sql" : Schema do banco de dados
-  b. Pasta "app-logs" : projeto back-end Java Web Spring
-  c. Pasta "app-logs-angular": projeto front-end Angular 9
+1. Arquivo "schema.sql" : Schema do banco de dados
+2. Pasta "app-logs" : projeto back-end Java Web Spring
+3. Pasta "app-logs-angular": projeto front-end Angular 9
 
 
 Candidato: Erica Okamura (CPF: 353.417.898-06)

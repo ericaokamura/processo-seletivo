@@ -91,9 +91,4 @@ public class LogController {
 		return new ResponseEntity<Iterable<Log>>(logService.listLogsByIpAndDate(ip, startTime, endTime), HttpStatus.OK);
 	}
 
-	@GetMapping(value = "/listByIpAndUserAgent/{ip}/{userAgent}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<Iterable<Log>> listLogsByIpAndUserAgent(@PathVariable("ip") String ip,
-			@PathVariable("userAgent") String userAgent) {
-		return new ResponseEntity<Iterable<Log>>(logService.listLogsByIpAndUserAgent(ip, userAgent), HttpStatus.OK);
-	}
 }

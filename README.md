@@ -25,13 +25,6 @@ Sobre os arquivos e pastas:
 3. Pasta "app-logs-angular": projeto front-end Angular 9
 
 
-Acesso às telas:
-
-1. Upload de arquivo log (access.log): http://localhost:4200/log-arquivo
-2. Formulário de log manual: http://localhost:4200/log-manual
-3. Filtro de logs: http://localhost:4200/filtro-log
-
-
 Candidato: Erica Okamura (CPF: 353.417.898-06)
 
 Vaga: Desenvolvedor Java/Angular pleno

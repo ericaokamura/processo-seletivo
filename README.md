@@ -15,6 +15,8 @@ Ferramentas e frameworks utilizados:
 9. JUnit 4
 10. Mockito
 11. Selenium
+12. Maven
 
 Candidato: Erica Okamura (CPF: 353.417.898-06)
+
 Vaga: Desenvolvedor Java/Angular pleno

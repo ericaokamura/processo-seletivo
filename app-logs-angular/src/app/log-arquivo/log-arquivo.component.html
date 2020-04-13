@@ -1,0 +1,11 @@
+<div class="container titulo-form">
+    <label class="titulo-form">Upload de Arquivo de Logs</label>
+</div>
+    
+<div class="container filter-form">
+
+    <form (ngSubmit)="fileChange($event)">
+        <input #selectedFile type="file" placeholder="Upload file" accept=".pdf,.doc,.docx,.log">
+        <button type="submit">Upload</button>
+    </form>
+</div>

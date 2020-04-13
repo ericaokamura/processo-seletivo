@@ -1,0 +1,48 @@
+.container {
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%
+}
+
+.titulo-form {
+    font-size: 20px;
+}
+
+.label{
+    font-size: 14px;
+}
+
+.input {
+    width: 30%;
+}
+
+.titulo-tabela {
+    font-size: 16px;
+}
+
+.column {
+    width: 30%;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    margin-right: 3%;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.filter-form {
+    margin-right: 3%;
+}
+
+td {
+    font-size: 12px;
+}
+
+
+
+
+

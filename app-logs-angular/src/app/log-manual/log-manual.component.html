@@ -1,0 +1,35 @@
+<div class="container titulo-form">
+    <label class="titulo-form">Formulário - Criação de Logs</label>
+</div>
+<div class="container">
+    <form [formGroup]="mainFormGroup" (ngSubmit)="salvarLog()">
+        <mat-form-field appearance="fill">
+            <mat-label>Data e Horário</mat-label>
+            <input matInput placeholder="yyyy-MM-dd HH:mm:ss.SSS" formControlName="dataHorario" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>IP</mat-label>
+            <input matInput placeholder="192.168.1.1" formControlName="ip" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Request</mat-label>
+            <input matInput placeholder="GET / HTTP/1.1" formControlName="request" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>Status</mat-label>
+            <input matInput placeholder="200" formControlName="status" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label>User Agent</mat-label>
+            <input matInput placeholder="Google Chrome" formControlName="userAgent" required>
+        </mat-form-field>
+        <br>
+        <div>
+            <button mat-button type="submit">SALVAR LOG</button>
+        </div>
+    </form>
+</div>

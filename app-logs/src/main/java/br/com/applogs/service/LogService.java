@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.applogs.model.Log;
-import br.com.applogs.model.LogAggregationResult;
 import br.com.applogs.repository.LogRepository;
 
 @Service

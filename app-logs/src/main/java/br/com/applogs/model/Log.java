@@ -17,21 +17,20 @@ public class Log {
 	private String ip;
 	private String request;
 	private Integer status;
-	@Column(name="user_agent")
-	private String userAgent;
+	private String user_agent;
 	
 	public Log() {
 		
 	}
 
-	public Log(String id, LocalDateTime date, String ip, String request, Integer status, String userAgent) {
+	public Log(String id, LocalDateTime date, String ip, String request, Integer status, String user_agent) {
 		
 		this.id = id;
 		this.date = date;
 		this.ip = ip;
 		this.request = request;
 		this.status = status;
-		this.userAgent = userAgent;
+		this.user_agent = user_agent;
 	}
 	
 	public String getId() {
@@ -65,15 +64,16 @@ public class Log {
 		this.status = status;
 	}
 	public String getUser_agent() {
-		return userAgent;
+		return this.user_agent;
 	}
-	public void setUserAgent(String userAgent) {
-		this.userAgent = userAgent;
+	
+	public void setUserAgent(String user_agent) {
+		this.user_agent = user_agent;
 	}
 	
 	public String toString() {
 		return "Log de ID: " + this.id + ", data: " + this.date + ", IP: " + this.ip + 
-				", request: " + this.request + ", status: " + this.status + ", User Agent: " + this.userAgent + ".";
+				", request: " + this.request + ", status: " + this.status + ", User Agent: " + this.user_agent + ".";
 	}
 	
 }

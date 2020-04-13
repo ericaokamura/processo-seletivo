@@ -19,7 +19,6 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 	@Autowired
 	private LogRepository logRepository;
 
-	@Autowired
 	public JobCompletionNotificationListener(LogRepository logRepository) {
 		this.logRepository = logRepository;
 	}
@@ -29,7 +28,7 @@ public class JobCompletionNotificationListener extends JobExecutionListenerSuppo
 		if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
 			log.info("!!! JOB FINISHED! Time to verify the results");
 			Iterable<Log> logs = logRepository.findAll();
-			while(logs.iterator()!=null) {
+			while(logs.iterator().hasNext()) {
 				System.out.println(logs.iterator().next());
 			}
 		}

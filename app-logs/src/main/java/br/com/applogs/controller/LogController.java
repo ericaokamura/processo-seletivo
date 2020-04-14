@@ -90,5 +90,11 @@ public class LogController {
 			@PathVariable("startTime") String startTime, @PathVariable("endTime") String endTime) {
 		return new ResponseEntity<Iterable<Log>>(logService.listLogsByIpAndDate(ip, startTime, endTime), HttpStatus.OK);
 	}
+	
+	@GetMapping(value = "/countByIpAndDateAndUserAgent/{ip}/{startTime}/{endTime}/{userAgent}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Integer countByIpAndDateAndUserAgent(@PathVariable("ip") String ip,
+			@PathVariable("startTime") String startTime, @PathVariable("endTime") String endTime, @PathVariable("userAgent") String userAgent) {
+		return logService.countByIpAndDateAndUserAgent(ip, startTime, endTime, userAgent);
+	}
 
 }

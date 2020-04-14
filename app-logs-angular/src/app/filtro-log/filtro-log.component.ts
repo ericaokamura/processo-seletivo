@@ -9,7 +9,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class FiltroLogComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'date', 'ip', 'request', 'status', 'user_agent'];
+  displayedColumns: string[] = ['id', 'date', 'ip', 'request', 'status', 'userAgent'];
 
   dataArray: any[];
 

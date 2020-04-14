@@ -19,19 +19,19 @@ public class LogDTO implements Serializable {
 	private String ip;
 	private String request;
 	private Integer status;
-	private String user_agent;
+	private String userAgent;
 	
 
 	public LogDTO() {
 		
 	}
 	
-	public LogDTO(String date, String ip, String request, Integer status, String user_agent) {
+	public LogDTO(String date, String ip, String request, Integer status, String userAgent) {
 		this.date = date;
 		this.ip = ip;
 		this.request = request;
 		this.status = status;
-		this.user_agent =user_agent;
+		this.userAgent =userAgent;
 	}
 	
 	public String getDate() {
@@ -58,10 +58,10 @@ public class LogDTO implements Serializable {
 	public void setStatus(Integer status) {
 		this.status = status;
 	}
-	public String getUser_agent() {
-		return user_agent;
+	public String getUserAgent() {
+		return userAgent;
 	}
-	public void setUser_agent(String user_agent) {
-		this.user_agent = user_agent;
+	public void setUserAgent(String userAgent) {
+		this.userAgent = userAgent;
 	}
 }

@@ -39,5 +39,9 @@ public class LogService {
 	public Iterable<Log> listLogsByIpAndDate(String ip, String startTime, String endTime) {
 		return logRepository.findByIpAndDateBetween(ip, LocalDateTime.parse(startTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")), LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
 	}
+	
+	public Integer countByIpAndDateAndUserAgent(String ip, String startTime, String endTime, String userAgent) {
+		return logRepository.findByIpAndDateBetweenAndUserAgent(ip, LocalDateTime.parse(startTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")), LocalDateTime.parse(endTime, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")), userAgent).size();
+	}
 
 }

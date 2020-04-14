@@ -15,6 +15,7 @@ import { FiltroLogComponent } from './filtro-log/filtro-log.component';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { LogArquivoComponent } from './log-arquivo/log-arquivo.component';
+import { LogDashboardComponent } from './log-dashboard/log-dashboard.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { LogArquivoComponent } from './log-arquivo/log-arquivo.component';
     AppComponent,
     LogManualComponent,
     FiltroLogComponent,
-    LogArquivoComponent
+    LogArquivoComponent,
+    LogDashboardComponent
   ],
   imports: [
     BrowserModule,

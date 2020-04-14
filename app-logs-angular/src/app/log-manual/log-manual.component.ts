@@ -53,7 +53,9 @@ export class LogManualComponent implements OnInit {
       (data: any) => {
         console.log(data);
         this.resetForm();
-        this._snackBar.open("Log salvo com sucesso!");
+        this._snackBar.open("Log salvo com sucesso!", 'OK', {
+          duration: 3000
+        });
       },
       (error: any) => {
         console.log(error);

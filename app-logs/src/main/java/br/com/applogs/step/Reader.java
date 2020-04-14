@@ -32,7 +32,7 @@ public class Reader implements ItemReader<LogDTO>, ItemStream {
 	public void open(ExecutionContext executionContext) throws ItemStreamException {
 		DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
 		tokenizer.setDelimiter("|");
-		tokenizer.setNames(new String[] { "date", "ip", "request", "status", "user_agent" });
+		tokenizer.setNames(new String[] { "date", "ip", "request", "status", "userAgent" });
 
 		DefaultLineMapper<LogDTO> lineMapper = new DefaultLineMapper<LogDTO>();
 		lineMapper.setLineTokenizer(tokenizer);
@@ -44,7 +44,7 @@ public class Reader implements ItemReader<LogDTO>, ItemStream {
 		this.delegate = new FlatFileItemReaderBuilder<LogDTO>().name("logItemReader")
 				.encoding(Charset.defaultCharset().name())
 				.resource(new ClassPathResource("access.log")).delimited()
-				.names(new String[] { "date", "ip", "request", "status", "user_agent" })
+				.names(new String[] { "date", "ip", "request", "status", "userAgent" })
 				.lineMapper(lineMapper)
 				.build();
 		

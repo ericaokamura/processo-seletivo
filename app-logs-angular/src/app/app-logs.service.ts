@@ -37,6 +37,10 @@ export class AppLogsService {
     return this.http.get(this.baseUrl + 'logs/list');
   }
 
+  public countLogsByIpAndDateAndUserAgent(ip: string, startTime: string, endTime: string, userAgent: string): Observable<any> {
+    return this.http.get(this.baseUrl + '/logs/countByIpAndDateAndUserAgent/' + ip + '/'  + startTime + '/' + endTime + '/' + userAgent);
+  }
+
   public uploadFile(formData: FormData): Observable<any> {
     console.log(formData);
     return this.http.post(this.baseUrl + 'logs/batch_file?uploadFile=', formData, {

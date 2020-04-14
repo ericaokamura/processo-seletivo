@@ -1,0 +1,38 @@
+<div class="container">
+    <label class="titulo-form">Dashboard de Logs</label>
+</div>
+
+<div class="container filter-form">
+    <form [formGroup]="mainFormGroup" (ngSubmit)="calcularNumeroLogs()">
+        <mat-form-field appearance="fill">
+            <mat-label> IP : </mat-label>
+            <input matInput placeholder="192.168.1.1" formControlName="ip" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label> Data/Horário de Início : </mat-label>
+            <input matInput placeholder="yyyy-MM-dd HH:mm:ss.SSS" formControlName="startTime" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label> Data/Horário de Fim : </mat-label>
+            <input matInput placeholder="yyyy-MM-dd HH:mm:ss.SSS" formControlName="endTime" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="fill">
+            <mat-label> User Agent : </mat-label>
+            <input matInput placeholder="Google Chrome" formControlName="userAgent" required>
+        </mat-form-field>
+        <br>
+        <div>
+            <button mat-button type="submit">CALCULAR</button>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <label class="titulo-resultado"> Número de requests : </label>
+    <h6> {{ count }} </h6>
+    <br>
+    <br>
+</div>

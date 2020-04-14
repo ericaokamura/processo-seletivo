@@ -8,14 +8,14 @@ export class LogManualModel {
     
     private status: number;
     
-    private user_agent: string;
+    private userAgent: string;
     
-    constructor(date: string, ip: string, request: string, status: number, user_agent: string) {
+    constructor(date: string, ip: string, request: string, status: number, userAgent: string) {
         this.date = date;
         this.ip = ip;
         this.request = request;
         this.status = status;
-        this.user_agent = user_agent;
+        this.userAgent = userAgent;
     }
 
     public getDate(): string {
@@ -43,9 +43,9 @@ export class LogManualModel {
         this.status = status;
     }
     public getUserAgent(): string {
-        return this.user_agent;
+        return this.userAgent;
     }
-    public setUserAgent(user_agent: string) {
-        this.user_agent = user_agent;
+    public setUserAgent(userAgent: string) {
+        this.userAgent = userAgent;
     }
 }

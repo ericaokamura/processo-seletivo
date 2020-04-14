@@ -69,9 +69,9 @@ public class LogController {
 	}
 
 	@PostMapping(value = "/save", consumes = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<String> saveLog(@RequestBody LogDTO logDTO) {
+	public ResponseEntity<Log> saveLog(@RequestBody LogDTO logDTO) {
 		Log log = logService.saveLog(LogConverter.DTOToModel(logDTO));
-		return new ResponseEntity<String>("Log de ID: " + log.getId() + " salvo com sucesso", HttpStatus.OK);
+		return new ResponseEntity<Log>(log, HttpStatus.OK);
 	}
 
 	@GetMapping(value = "/listByIp/{ip}", produces = MediaType.APPLICATION_JSON_VALUE)
